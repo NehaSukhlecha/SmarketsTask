@@ -31,7 +31,10 @@ class EventListScreen extends PureComponent {
       this.props.events.events.length > 0 ? (
       <SafeAreaView style={styles.container}>
         <View style={styles.datacontainer}>
-          <EventList data={this.props.events} />
+          <EventList
+            data={this.props.events}
+            onItemSelected={this.onItemSelected}
+          />
         </View>
       </SafeAreaView>
     ) : (
@@ -45,6 +48,12 @@ class EventListScreen extends PureComponent {
   componentDidMount() {
     this.getEventIds();
   }
+  onItemSelected = index => {
+    const selectedEvent = this.props.events.events[index];
+    this.props.navigation.navigate('Detail', {
+      event: selectedEvent,
+    });
+  };
 
   getEventIds = () => {
     this.setState(

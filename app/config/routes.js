@@ -21,7 +21,22 @@ const Navigator = createStackNavigator(
         },
       },
     },
-    Detail: EventDetailScreen,
+    Detail: {
+      screen: EventDetailScreen,
+      navigationOptions: {
+        title: 'EVENT DETAIL',
+        headerStyle: {
+          backgroundColor: '#252525',
+          elevation: 0,
+          shadowOpacity: 0,
+        },
+        headerTintColor: '#FFFFFF',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          color: '#FFFFFF',
+        },
+      },
+    },
   },
   {
     initialRouteName: 'Home',

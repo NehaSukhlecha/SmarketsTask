@@ -3,6 +3,10 @@ export function diff_hours(dt2, dt1) {
   diff /= 60 * 60;
   return Math.abs(Math.round(diff));
 }
+export function dateFormattor(dt2) {
+  var date = new Date(dt2).toDateString();
+  return date;
+}
 
 export function getDateTime() {
   var now = new Date();
