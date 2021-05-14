@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		76D8BA77444EC76673007D59 /* libPods-SmarketsTask-SmarketsTaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F45357D2994600CF039EDFE9 /* libPods-SmarketsTask-SmarketsTaskTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D1657B50264EDF6300CF5914 /* sourcesanspro_semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1657B4E264EDF6300CF5914 /* sourcesanspro_semibold.ttf */; };
+		D1657B51264EDF6300CF5914 /* sourcesanspro_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1657B4F264EDF6300CF5914 /* sourcesanspro_regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SmarketsTask/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		858B0F4C9EE3C14EFCC883F8 /* Pods-SmarketsTask-SmarketsTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmarketsTask-SmarketsTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SmarketsTask-SmarketsTaskTests/Pods-SmarketsTask-SmarketsTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA6F54C864391DDCA0B8A3F5 /* Pods-SmarketsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmarketsTask.debug.xcconfig"; path = "Target Support Files/Pods-SmarketsTask/Pods-SmarketsTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D1657B4E264EDF6300CF5914 /* sourcesanspro_semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sourcesanspro_semibold.ttf; path = ../assets/fonts/sourcesanspro_semibold.ttf; sourceTree = "<group>"; };
+		D1657B4F264EDF6300CF5914 /* sourcesanspro_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sourcesanspro_regular.ttf; path = ../assets/fonts/sourcesanspro_regular.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F45357D2994600CF039EDFE9 /* libPods-SmarketsTask-SmarketsTaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmarketsTask-SmarketsTaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,7 +108,6 @@
 				23B6A5070166FBDD9EE0BB90 /* Pods-SmarketsTask-SmarketsTaskTests.debug.xcconfig */,
 				858B0F4C9EE3C14EFCC883F8 /* Pods-SmarketsTask-SmarketsTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +131,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D1657B4F264EDF6300CF5914 /* sourcesanspro_regular.ttf */,
+				D1657B4E264EDF6300CF5914 /* sourcesanspro_semibold.ttf */,
 				13B07FAE1A68108700A75B9A /* SmarketsTask */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* SmarketsTaskTests */,
@@ -243,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1657B50264EDF6300CF5914 /* sourcesanspro_semibold.ttf in Resources */,
+				D1657B51264EDF6300CF5914 /* sourcesanspro_regular.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
