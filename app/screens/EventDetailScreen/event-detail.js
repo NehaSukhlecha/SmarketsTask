@@ -10,7 +10,6 @@ class EventDetailScreen extends PureComponent {
   constructor(props) {
     super(props);
     currentEvent = this.props.navigation.state.params.event;
-    console.log(currentEvent);
   }
   render() {
     return (
