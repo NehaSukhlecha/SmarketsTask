@@ -8,9 +8,9 @@ const Navigator = createStackNavigator(
     Home: {
       screen: EventListScreen,
       navigationOptions: {
-        title: 'Football',
+        title: 'POPULAR EVENTS',
         headerStyle: {
-          backgroundColor: '#0D0D0D',
+          backgroundColor: '#252525',
           elevation: 0,
           shadowOpacity: 0,
         },
