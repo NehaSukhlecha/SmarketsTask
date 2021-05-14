@@ -16,6 +16,6 @@ export default StyleSheet.create({
   text: {
     fontSize: 20,
     color: '#ffffff',
-    fontFamily: 'sans-serif',
+    fontFamily: 'SourceSansPro-Semibold',
   },
 });
