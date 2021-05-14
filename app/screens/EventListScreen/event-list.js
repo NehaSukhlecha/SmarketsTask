@@ -17,11 +17,11 @@ class EventListScreen extends PureComponent {
     super(props);
 
     this.state = {
-      loading: false,
       event_ids: [],
       events: [],
       action_type: '',
-      error: false,
+      loading: false, // use to show loading indicator
+      error: false, // use to show error indicator
     };
   }
 
@@ -30,12 +30,16 @@ class EventListScreen extends PureComponent {
       this.props.events.events !== undefined &&
       this.props.events.events.length > 0 ? (
       <SafeAreaView style={styles.container}>
-        <EventList data={this.props.events} />
+        <View style={styles.datacontainer}>
+          <EventList data={this.props.events} />
+        </View>
       </SafeAreaView>
     ) : (
-      <View style={styles.container}>
-        <Text style={styles.text}>Fetching Data!!!!</Text>
-      </View>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.textcontainer}>
+          <Text style={styles.text}>Fetching Data!!!!</Text>
+        </View>
+      </SafeAreaView>
     );
   }
   componentDidMount() {
@@ -73,7 +77,7 @@ class EventListScreen extends PureComponent {
         }
         break;
       case GET_EVENTS_RESULT:
-        //console.log(this.props.events.events);
+        console.log('Event Fetched');
         break;
     }
   }
